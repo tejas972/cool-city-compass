@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
-import HeatMap from '@/components/HeatMap';
+import MapView from '@/components/MapView';
 import InterventionCard from '@/components/InterventionCard';
 import StatsCard from '@/components/StatsCard';
 import CommunityFeedback from '@/components/CommunityFeedback';
@@ -68,7 +67,7 @@ const Index = () => {
             <div className="flex items-center justify-between">
               <div>
                 <h2 className="text-2xl font-bold mb-2">Urban Heat Map</h2>
-                <p className="text-muted-foreground">Explore temperature variations across the city</p>
+                <p className="text-muted-foreground">Explore temperature variations across India</p>
               </div>
               <TabsList>
                 <TabsTrigger value="map" className="flex items-center gap-1">
@@ -87,7 +86,7 @@ const Index = () => {
             </div>
             
             <TabsContent value="map" className="space-y-4">
-              <HeatMap />
+              <MapView />
               
               <Card>
                 <CardHeader>
